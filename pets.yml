@@ -1,0 +1,17 @@
+database:
+    driverClass: org.h2.Driver
+    url: jdbc:h2:tcp://localhost:19092/petshop
+    user: pets
+    password: P3tZsh0p
+    validationQuery: "/* Health Check query */ select 1"
+    
+logging:
+    level: INFO
+    console: 
+        enabled: true
+    file: 
+        enabled: true
+        threshold: ALL
+        currentLogFilename: logs/petShop.log
+        archivedLogFilenamePattern: ./logs/petShop-%d.log.gz
+        timeZone: "America/Chicago"

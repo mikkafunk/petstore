@@ -1,0 +1,7 @@
+tr:nth-child(odd) {
+	background-color: #E4F5A6;
+}
+
+tr:hover {
+	background-color: pink;
+}
