@@ -34,8 +34,7 @@
         <slf4j.version>1.7.5</slf4j.version>
         <mockito.version>1.9.5</mockito.version>
         <joda-time.version>2.3</joda-time.version>
-        <jdbi.version>2.41</jdbi.version>
-        <bitbucket.url>https://bitbucket.org/javaseeds/nat</bitbucket.url>
+        <bitbucket.url>https://github.com/javaseeds/petstore</bitbucket.url>
     </properties>
 
     <repositories>
@@ -178,7 +177,7 @@
                                     implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
                                 <transformer
                                     implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>funk.shane.nat.XBoxVoteService</mainClass>
+                                    <mainClass>funk.shane.pets.PetsService</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
