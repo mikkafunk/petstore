@@ -1,4 +1,4 @@
-package funk.shane.resource;
+package funk.shane.pets.resource;
 
 import java.io.IOException;
 import java.sql.ResultSet;

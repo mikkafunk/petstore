@@ -11,7 +11,7 @@ import com.yammer.dropwizard.views.ViewBundle;
 
 import funk.shane.pets.data.DataStore;
 import funk.shane.pets.health.DatabaseHealthCheck;
-import funk.shane.resource.DataViewResource;
+import funk.shane.pets.resource.DataViewResource;
 
 public class PetsService extends Service<PetsConfiguration> {
 
