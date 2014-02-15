@@ -10,12 +10,12 @@ import org.h2.jdbcx.JdbcConnectionPool;
 public interface DataStore {
     Connection getConn();
     
-    public static final class Factory {
-        private static DataStore DATASTORE;
+    final class Factory {
+        private DataStore DATASTORE;
         
-        private final String url;
-        private final String user;
-        private final String password;
+        private String url;
+        private String user;
+        private String password;
         
         public Factory(String url, String user, String password) {
             this.url = url;
