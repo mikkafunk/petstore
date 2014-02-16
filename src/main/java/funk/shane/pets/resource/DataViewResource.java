@@ -11,6 +11,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.yammer.metrics.annotation.Timed;
+
 import funk.shane.pets.data.DataStore;
 import funk.shane.pets.util.DbUtils;
 import funk.shane.pets.view.DatabaseView;
@@ -26,6 +28,7 @@ public class DataViewResource {
     
     @Path("settings")
     @GET
+    @Timed
     public DatabaseView getSettings() {
         
         Map<String, String> settingsMap = new LinkedHashMap<>();

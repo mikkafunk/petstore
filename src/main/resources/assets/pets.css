@@ -5,3 +5,10 @@ tr:nth-child(odd) {
 tr:hover {
 	background-color: pink;
 }
+
+ul {
+	width: 60%;
+}
+li:hover {
+	border: solid thin blue;
+}

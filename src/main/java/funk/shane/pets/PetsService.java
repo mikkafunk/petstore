@@ -12,6 +12,7 @@ import com.yammer.dropwizard.views.ViewBundle;
 import funk.shane.pets.data.DataStore;
 import funk.shane.pets.health.DatabaseHealthCheck;
 import funk.shane.pets.resource.DataViewResource;
+import funk.shane.pets.resource.IndexResource;
 
 public class PetsService extends Service<PetsConfiguration> {
 
@@ -38,5 +39,6 @@ public class PetsService extends Service<PetsConfiguration> {
         
         environment.addHealthCheck(new DatabaseHealthCheck(dataStore));
         environment.addResource(new DataViewResource(dataStore));
+        environment.addResource(new IndexResource());
     }
 }
